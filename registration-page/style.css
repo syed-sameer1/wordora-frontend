@@ -8,70 +8,66 @@
 body {
   background: #0f172a;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* MAIN CONTAINER */
+/* MAIN */
 .register-container {
-  width: 90%;
-  max-width: 1200px;
-  height: 650px;
+  height: 100vh;
   display: flex;
-  background: #020617;
-  border-radius: 16px;
-  overflow: hidden;
 }
 
-/* LEFT */
-.register-left {
-  flex: 1.4;
+/* LEFT IMAGE */
+.left {
+  flex: 2;
   padding: 60px;
   color: #e5e7eb;
+  background:
+    linear-gradient(rgba(2,6,23,0.65), rgba(2,6,23,0.75)),
+    url("../assets/WhatsApp\ Image\ 2026-01-16\ at\ 1.26.29\ AM\ \(2\).jpeg")
+    center / cover no-repeat;
 }
 
-.register-left h1 {
+.left h1 {
   font-size: 32px;
   margin-bottom: 15px;
 }
 
-.register-left p {
+.left p {
   font-size: 15px;
-  opacity: 0.85;
-  max-width: 420px;
+  max-width: 450px;
+  opacity: 0.9;
 }
 
-/* RIGHT */
-.register-right {
-  flex: 2;
+/* RIGHT FORM */
+.right {
+  flex: 1.3;
+  background: #020617;
   padding: 40px;
-  background: #1e293b;
-  color: white;
   overflow-y: auto;
+  color: white;
 }
 
-.register-right h2 {
+.right h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
 /* INPUTS */
-.register-right input[type="text"],
-.register-right input[type="email"],
-.register-right input[type="password"],
-.register-right input[type="number"] {
+.right input[type="text"],
+.right input[type="email"],
+.right input[type="password"],
+.right input[type="number"] {
   width: 100%;
   height: 42px;
   padding: 10px 14px;
   margin-bottom: 12px;
   border-radius: 10px;
-  border: 1px solid #334155;
+  border: 1px solid #1e293b;
   background: #0f172a;
   color: white;
 }
 
-.register-right input:focus {
+.right input:focus {
   outline: none;
   border-color: #6366f1;
 }
@@ -83,23 +79,20 @@ body {
 
 .section-title {
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   color: #cbd5f5;
 }
 
-/* RADIO & CHECKBOX FIX */
-.options label,
-.skills label {
+.section label {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 14px;
-  margin-bottom: 8px;
-  cursor: pointer;
+  margin-bottom: 6px;
 }
 
-.options input,
-.skills input {
+/* RADIO & CHECKBOX */
+.section input {
   width: 14px;
   height: 14px;
   accent-color: #6366f1;
@@ -113,7 +106,7 @@ body {
 }
 
 /* BUTTONS */
-.buttons {
+.btn-div {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -128,14 +121,13 @@ button {
   background: #6366f1;
   color: white;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 button:hover {
   background: #4f46e5;
 }
 
-.buttons a {
+.btn-div a {
   color: #cbd5f5;
   font-size: 14px;
   text-decoration: none;

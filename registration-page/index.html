@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workora | Registration</title>
+  <title>Workora | Register</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
@@ -11,8 +11,8 @@
 
   <div class="register-container">
 
-    <!-- LEFT INFO -->
-    <div class="register-left">
+    <!-- LEFT IMAGE -->
+    <div class="left">
       <h1>Join Workora</h1>
       <p>
         Create your profile once and get job recommendations
@@ -21,7 +21,7 @@
     </div>
 
     <!-- RIGHT FORM -->
-    <div class="register-right">
+    <div class="right">
       <h2>Create Account</h2>
 
       <input type="text" id="Username" placeholder="Username" />
@@ -30,19 +30,15 @@
       <input type="password" id="confirmPassword" placeholder="Confirm password" />
       <input type="number" id="Experience" placeholder="Experience (years)" />
 
-      <!-- QUALIFICATION -->
       <div class="section">
         <p class="section-title">Qualification</p>
-        <div class="options">
-          <label><input type="radio" name="education" value="Matric"> Matric</label>
-          <label><input type="radio" name="education" value="Intermediate"> Intermediate</label>
-          <label><input type="radio" name="education" value="Bachelors"> Bachelors</label>
-          <label><input type="radio" name="education" value="Masters"> Masters</label>
-          <label><input type="radio" name="education" value="PHD"> PHD</label>
-        </div>
+        <label><input type="radio" name="education" value="Matric"> Matric</label>
+        <label><input type="radio" name="education" value="Intermediate"> Intermediate</label>
+        <label><input type="radio" name="education" value="Bachelors"> Bachelors</label>
+        <label><input type="radio" name="education" value="Masters"> Masters</label>
+        <label><input type="radio" name="education" value="PHD"> PHD</label>
       </div>
 
-      <!-- SKILLS (FULL LIST RESTORED) -->
       <div class="section">
         <p class="section-title">Skills</p>
         <div class="skills">
@@ -73,14 +69,14 @@
         </div>
       </div>
 
-      <!-- ACTIONS -->
-      <div class="buttons">
+      <div class="btn-div">
         <button id="register">Register</button>
         <a href="../login-page/index.html">Back to login</a>
       </div>
 
       <p id="message"></p>
     </div>
+
   </div>
 
 </body>
