@@ -1,0 +1,108 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif
+}
+/* body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A1C3B;
+} */
+.login-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+   overflow: hidden;
+
+}
+.left{
+    flex: 2;
+    height: 100%;
+    padding: 50px;
+    color:white;
+    background: url(../assets/man-sits-dark-room-front-blank-laptop-screen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.right{
+     flex: 1.2;
+     height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(216, 119, 216);
+    padding: 15px;
+    justify-content: center;
+    align-items: start;
+    background-color: white;
+}
+
+#heading {
+    align-self: center;
+}
+
+.btn-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.login-btn{
+    margin-right: 10px;
+}
+
+.input-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+input{
+    margin: 5px 0px;
+    height: 35px;
+    padding: 7px;
+    border: 0.5px solid #0A1C3B;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.linkButton {
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    height: 35px;
+    margin: 5px 0px;
+    background-color:#0A1C3B;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    width: 40%;
+}
+
+#heading{
+    margin-bottom: 15px;
+}
+.name{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+p{
+    font-size: 15px;
+}
+.forgot-pass{
+    margin-bottom: 15px;
+    
+}
