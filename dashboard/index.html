@@ -1,149 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Workora | Smart Job Recommendation</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <script src="./script.js"></script>
-    </head>
-    <body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Workora | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
 
-        <div class="layout">
+<div class="layout">
 
-            <aside class="sidebar">
-                <nav>
-                    <a class="active"><i class="fas fa-chart-line"></i> Dashboard</a>
-                    <a><i class="fas fa-briefcase"></i> Edit Profile</a>
-                </nav>
-                <div class="sidebar-footer"></div>
-            </aside>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">Workora</div>
 
-            <main class="content">
+    <nav>
+      <a class="active"><i class="fas fa-chart-line"></i> Dashboard</a>
+      <a><i class="fas fa-user"></i> Edit Profile</a>
+    </nav>
 
-                <header class="topbar">
-                    <div>
-                        <h1>Workora</h1>
-                        <p>Find jobs tailored for you</p>
-                    </div>
-                    <button class="logout">Logout</button>
-                </header>
+    <div class="sidebar-footer">
+      © 2026 Workora
+    </div>
+  </aside>
 
-                <section class="stats">
-                    <div class="stat-card">
-                        <h3>124</h3>
-                        <p>Recommended Jobs</p>
-                    </div>
-                </section>
+  <!-- MAIN CONTENT -->
+  <main class="content">
 
-                <section class="filter-box">
-                    <h2>Filter Jobs</h2>
-                    <div class="filters">
-                        <select>
-                            <option>Salary</option>
-                            <option>30k-50k</option>
-                            <option>50k-100k</option>
-                            <option>100k-150k</option>
-                        </select>
-                        <select>
-                            <option>Experience Level</option>
-                            <option>Fresh</option>
-                            <option>1-3 Years</option>
-                            <option>3+ Years</option>
-                        </select>
-                        <select>
-                            <option>Skills</option>
-                            <option>Software Developer</option>
-                            <option>Game Developer</option>
-                            <option>App Developer</option>
-                        </select>
-                        <button>Search</button>
-                    </div>
-                </section>
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <div>
+        <h1>Dashboard</h1>
+        <p>Jobs recommended based on your profile</p>
+      </div>
+      <button class="logout">Logout</button>
+    </header>
 
-                <section class="job-list">
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-card">
+        <h3>124</h3>
+        <p>Recommended Jobs</p>
+      </div>
+      <div class="stat-card">
+        <h3>18</h3>
+        <p>Saved Jobs</p>
+      </div>
+    </section>
 
-                    <div class="job">
-                        <div class="job-header">
-                            <h3>Frontend Developer</h3>
-                        </div>
+    <!-- FILTERS -->
+    <section class="filter-box">
+      <h2>Filter Jobs</h2>
+      <div class="filters">
+        <select>
+          <option>Salary</option>
+          <option>30k - 50k</option>
+          <option>50k - 100k</option>
+          <option>100k+</option>
+        </select>
 
-                        <p class="job-company">TechSoft Solutions</p>
+        <select>
+          <option>Experience</option>
+          <option>Fresh</option>
+          <option>1–3 Years</option>
+          <option>3+ Years</option>
+        </select>
 
-                        <p class="job-timing">Full Time • Karachi</p>
+        <select>
+          <option>Skills</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Full Stack</option>
+        </select>
 
-                        <div class="job-tags">
-                            <span>React</span>
-                            <span>UI/UX</span>
-                            <span>Tailwind</span>
-                        </div>
+        <button>Search</button>
+      </div>
+    </section>
 
-                        <p class="job-salary">
-                            PKR 120k - 180k
-                        </p>
+    <!-- JOB LIST -->
+    <section class="job-list">
 
-                        <p class="job-desc">
-                            Looking for a skilled Frontend Developer with strong knowledge of HTML, CSS,
-                            and JavaScript. The candidate should be able to create responsive and user-friendly
-                            web interfaces.
-                        </p>
-                    </div>
-
-                    <div class="job">
-                        <div class="job-header">
-                            <h3>Frontend Developer</h3>
-                        </div>
-
-                        <p class="job-company">TechSoft Solutions</p>
-
-                        <p class="job-timing">Full Time • Karachi</p>
-
-                        <div class="job-tags">
-                            <span>React</span>
-                            <span>UI/UX</span>
-                            <span>Tailwind</span>
-                        </div>
-
-                        <p class="job-salary">
-                            PKR 120k - 180k
-                        </p>
-
-                        <p class="job-desc">
-                            Looking for a skilled Frontend Developer with strong knowledge of HTML, CSS,
-                            and JavaScript. The candidate should be able to create responsive and user-friendly
-                            web interfaces.
-                        </p>
-                    </div>
-
-                    <div class="job">
-                        <div class="job-header">
-                            <h3>Frontend Developer</h3>
-                        </div>
-
-                        <p class="job-company">TechSoft Solutions</p>
-
-                        <p class="job-timing">Full Time • Karachi</p>
-
-                        <div class="job-tags">
-                            <span>React</span>
-                            <span>UI/UX</span>
-                            <span>Tailwind</span>
-                        </div>
-
-                        <p class="job-salary">
-                            PKR 120k - 180k
-                        </p>
-
-                        <p class="job-desc">
-                            Looking for a skilled Frontend Developer with strong knowledge of HTML, CSS,
-                            and JavaScript. The candidate should be able to create responsive and user-friendly
-                            web interfaces.
-                        </p>
-                    </div>
-
-                </section>
-            </main>
+      <div class="job">
+        <div class="job-header">
+          <h3>Frontend Developer</h3>
+          <span class="badge">Full Time</span>
         </div>
 
-    </body>
+        <p class="job-company">TechSoft Solutions</p>
+        <p class="job-location">Karachi, Pakistan</p>
+
+        <div class="job-tags">
+          <span>React</span>
+          <span>UI/UX</span>
+          <span>Tailwind</span>
+        </div>
+
+        <p class="job-salary">PKR 120k – 180k</p>
+
+        <p class="job-desc">
+          Looking for a frontend developer with strong React
+          and responsive design skills.
+        </p>
+
+        <button class="apply-btn">Apply</button>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <h3>Backend Developer</h3>
+          <span class="badge">Remote</span>
+        </div>
+
+        <p class="job-company">CloudCore</p>
+        <p class="job-location">Remote</p>
+
+        <div class="job-tags">
+          <span>Node.js</span>
+          <span>PostgreSQL</span>
+          <span>AWS</span>
+        </div>
+
+        <p class="job-salary">PKR 150k – 220k</p>
+
+        <p class="job-desc">
+          Backend developer needed with experience in scalable
+          APIs and cloud services.
+        </p>
+
+        <button class="apply-btn">Apply</button>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+</body>
 </html>
