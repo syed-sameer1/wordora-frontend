@@ -1,187 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workora | Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
 
-  </head>
-  <body>
-    <div class="login-container">
-      <div class="heading-section">
-        <h1>
-          Registration 
-        </h1>
-      </div>
-      <div class="form-section">
-        <div class="right">
-        <h2 id="heading">Personal Information</h2>
-        <div class="input-one">
-          <input class="input-info" type="text" id="Username" placeholder="Enter Username " />
-        </div>
-        <div class="input-one">
-          <input class="input-info" type="email" id="email" placeholder="Enter Your Email"/>
-        </div>
+  <div class="register-container">
 
-        <div class="input-one">
-          <input class="input-info" type="password" id="password" placeholder="Enter Password"/>
-        </div>
-
-        <div class="input-one">
-            <input class="input-info" type="password" id="confirmPassword" placeholder="Confirm Your Password"/>
-        </div>
-
-        <div class="forgot-pass"><a href="#">forgot password</a></div>
-
-        <div class="btn-div">
-          
-          <button class="login-btn" type="button" id="register">Register</button>
-
-            <button class="register-btn" type="button" id="Backlogin">
-              <a href="../login-page/index.html" class="linkButton">
-                Back to login
-              </a>
-            </button>
-        </div>
-        <p id="message" style="color: red; margin-top: 10px;"></p>
-        </div>
-        <div class="left">
-        <h2 class="exp-skill">skills and Experience</h2>
-
-        <div class="input-2nd">
-        <input class="child-input" type="number" id="Experience" placeholder="Enter Your Experience(e.g., 5 Years)"/>
-        </div>
-
-        <div class="quaification">
-        <h3 class="edu">Select Your Qualification</h3>
-        <div class="qualification-inputs">
-        <div>
-        <input type="radio" name="education" value="Matric" /> Matric
-        </div>
-
-        <div>
-        <input type="radio" name="education" value="Intermediate" />Intermediate
-        </div>
-
-        <div>
-        <input type="radio" name="education" value="Bachelors" />Bachelors
-        </div>
-
-        <div>
-        <input type="radio" name="education" value="Masters" /> Masters
-        </div>
-
-        <div>
-        <input type="radio" name="education" value="PHD" /> PHD
-        </div>
-        </div>
-        </div>
-        <div class="skills">
-          <h3 class="select-skill">Select Your Skills</h3>
-          <div class="skill-input">       
-        <div>
-          <label><input type="checkbox" name="skills[]" value="HTML"><span>HTML</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="CSS"><span>CSS</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="JavaScript"><span>JavaScript</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Bootstrap"><span>Bootstrap</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="React"><span>React</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Node.js"><span>Node.js</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="PHP"><span>PHP</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Python"><span>Python</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Java"><span>Java</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="C"><span>C</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="C++"><span>C++</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="SQL"><span>SQL</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="MySQL"><span>MySQL</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="MongoDB"><span>MongoDB</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Git"><span>Git</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Linux"><span>Linux</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Networking"><span>Networking</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Cyber Security"><span>Cyber Security</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Machine Learning"><span>Machine Learning</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Artificial Intelligence"><span>Artificial Intelligence</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Data Analysis"><span>Data Analysis</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Excel"><span>Excel</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="AWS"><span>AWS</span></label>
-        </div>
-
-        <div>
-          <label><input type="checkbox" name="skills[]" value="Docker"><span>Docker</span></label>
-        </div>
-
-
-        </div>
-        </div>
-        </div>
-      </div>
+    <!-- LEFT IMAGE -->
+    <div class="left">
+      <h1>Join Workora</h1>
+      <p>
+        Create your profile once and get job recommendations
+        that actually match your skills and experience.
+      </p>
     </div>
-  </body>
+
+    <!-- RIGHT FORM -->
+    <div class="right">
+      <h2>Create Account</h2>
+
+      <input type="text" id="Username" placeholder="Username" />
+      <input type="email" id="email" placeholder="Email address" />
+      <input type="password" id="password" placeholder="Password" />
+      <input type="password" id="confirmPassword" placeholder="Confirm password" />
+      <input type="number" id="Experience" placeholder="Experience (years)" />
+
+      <div class="section">
+        <p class="section-title">Qualification</p>
+        <label><input type="radio" name="education" value="Matric"> Matric</label>
+        <label><input type="radio" name="education" value="Intermediate"> Intermediate</label>
+        <label><input type="radio" name="education" value="Bachelors"> Bachelors</label>
+        <label><input type="radio" name="education" value="Masters"> Masters</label>
+        <label><input type="radio" name="education" value="PHD"> PHD</label>
+      </div>
+
+      <div class="section">
+        <p class="section-title">Skills</p>
+        <div class="skills">
+          <label><input type="checkbox" name="skills[]" value="HTML"> HTML</label>
+          <label><input type="checkbox" name="skills[]" value="CSS"> CSS</label>
+          <label><input type="checkbox" name="skills[]" value="JavaScript"> JavaScript</label>
+          <label><input type="checkbox" name="skills[]" value="Bootstrap"> Bootstrap</label>
+          <label><input type="checkbox" name="skills[]" value="React"> React</label>
+          <label><input type="checkbox" name="skills[]" value="Node.js"> Node.js</label>
+          <label><input type="checkbox" name="skills[]" value="PHP"> PHP</label>
+          <label><input type="checkbox" name="skills[]" value="Python"> Python</label>
+          <label><input type="checkbox" name="skills[]" value="Java"> Java</label>
+          <label><input type="checkbox" name="skills[]" value="C"> C</label>
+          <label><input type="checkbox" name="skills[]" value="C++"> C++</label>
+          <label><input type="checkbox" name="skills[]" value="SQL"> SQL</label>
+          <label><input type="checkbox" name="skills[]" value="MySQL"> MySQL</label>
+          <label><input type="checkbox" name="skills[]" value="MongoDB"> MongoDB</label>
+          <label><input type="checkbox" name="skills[]" value="Git"> Git</label>
+          <label><input type="checkbox" name="skills[]" value="Linux"> Linux</label>
+          <label><input type="checkbox" name="skills[]" value="Networking"> Networking</label>
+          <label><input type="checkbox" name="skills[]" value="Cyber Security"> Cyber Security</label>
+          <label><input type="checkbox" name="skills[]" value="Machine Learning"> Machine Learning</label>
+          <label><input type="checkbox" name="skills[]" value="Artificial Intelligence"> Artificial Intelligence</label>
+          <label><input type="checkbox" name="skills[]" value="Data Analysis"> Data Analysis</label>
+          <label><input type="checkbox" name="skills[]" value="Excel"> Excel</label>
+          <label><input type="checkbox" name="skills[]" value="AWS"> AWS</label>
+          <label><input type="checkbox" name="skills[]" value="Docker"> Docker</label>
+        </div>
+      </div>
+
+      <div class="btn-div">
+        <button id="register">Register</button>
+        <a href="../login-page/index.html">Back to login</a>
+      </div>
+
+      <p id="message"></p>
+    </div>
+
+  </div>
+
+</body>
 </html>

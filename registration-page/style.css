@@ -1,225 +1,140 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto', sans-serif
-}
- body{
-    /* height: 100vh; */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-.login-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.heading-section {
-    padding: 10px;
+body {
+  background: #0f172a;
+  height: 100vh;
 }
 
-.form-section {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 3px 3px 10px rgba(7, 3, 18, 0.863);
-    overflow: hidden;
-    margin: 20px 0px;
-}
-.left{
-    flex: 2;
-    height: 100%;
-    padding: 50px;
-    color:white;
-    background-color: #0A1C3B;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
-.right{
-     flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(216, 119, 216);
-    padding: 15px;
-    justify-content: center;
-    align-items: start;
-    background-color: white;
+/* MAIN */
+.register-container {
+  height: 100vh;
+  display: flex;
 }
 
-#heading {
-    align-self: center;
+/* LEFT IMAGE */
+.left {
+  flex: 2;
+  padding: 60px;
+  color: #e5e7eb;
+  background:
+    linear-gradient(rgba(2,6,23,0.65), rgba(2,6,23,0.75)),
+    url("../assets/WhatsApp\ Image\ 2026-01-16\ at\ 1.26.29\ AM\ \(2\).jpeg")
+    center / cover no-repeat;
 }
 
-.btn-div{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.login-btn{
-    margin-right: 10px;
+.left h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
-.input-one{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+.left p {
+  font-size: 15px;
+  max-width: 450px;
+  opacity: 0.9;
 }
 
-.input-info{
-    margin: 5px 0px;
-    height: 35px;
-    padding: 7px;
-    border: 0.5px solid #0A1C3B;
-    width: 100%;
-    border-radius: 12px;
-}
-button{
-    height: 35px;
-    margin: 5px 0px;
-    background-color:#0A1C3B;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    width: 40%;
+/* RIGHT FORM */
+.right {
+  flex: 1.3;
+  background: #020617;
+  padding: 40px;
+  overflow-y: auto;
+  color: white;
 }
 
-#heading{
-    margin-bottom: 15px;
+.right h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-
-.linkButton {
-    color: white;
-    text-decoration: none;
-}
-.name{
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: flex-start;
-}
-p{
-    font-size: 15px;
-}
-.forgot-pass{
-    margin-bottom: 15px;
-    
-}
-.exp-skill{
-    margin-bottom: 15px;
-}
-.input-2nd{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-}   
-.child-input{
-   margin: 5px 0px;
-    height: 35px;
-    padding: 7px;
-    border: 0.5px solid white;
-    width: 100%;
-    border-radius: 12px; 
-    background-color: #0A1C3B;
-    color: white;   
-}
-.child-input::placeholder{
-    color: white;
+/* INPUTS */
+.right input[type="text"],
+.right input[type="email"],
+.right input[type="password"],
+.right input[type="number"] {
+  width: 100%;
+  height: 42px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  background: #0f172a;
+  color: white;
 }
 
-.qualification-inputs{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-    font-size: 16px;
-    
+.right input:focus {
+  outline: none;
+  border-color: #6366f1;
 }
 
-.qualification-inputs > div {
-    margin-bottom: 5px;
+/* SECTIONS */
+.section {
+  margin: 18px 0;
 }
 
-.first-input{
-    gap: 10px;
-}
-.select-skill{
-    margin-bottom: 8px;
-}
-
-/* Container for all skills */
-.skills {
-  max-width: 500px;
-  padding: 10px;
-  border-radius: 8px solid white;
-  background: #0c1b3a;  /* keep your dark section */
-  color: #fff;
-  font-family: Arial, sans-serif;
-}
-
-/* Section heading */
-.skills h3 {
-  font-size: 16px;
+.section-title {
+  font-size: 14px;
   margin-bottom: 8px;
+  color: #cbd5f5;
 }
 
-/* Make checkboxes into a compact grid */
-.skills {
-  display: inline-block;   /* inline-block for wrapping */
-  width: 100%;             /* 2 columns, 48% width each */
-  margin-bottom: 4px;     /* reduce vertical gap */
-  vertical-align: top;
-}
-
-.skill-input {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.skill-input div {
-    width: 33%;
-    margin-bottom: 10px;
-}
-
-.skill-input div label {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
-
-
-/* .skills label {
+.section label {
   display: flex;
   align-items: center;
-  gap: 5px;
-  cursor: pointer;
+  gap: 10px;
   font-size: 14px;
-} */
+  margin-bottom: 6px;
+}
 
-/* Checkbox size and color */
-.skills input[type="checkbox"] {
-  width: 20px;
-  height: 16px;
-  accent-color:#0c1b3a;
+/* RADIO & CHECKBOX */
+.section input {
+  width: 14px;
+  height: 14px;
+  accent-color: #6366f1;
+}
+
+/* SKILLS GRID */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* BUTTONS */
+.btn-div {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.edu{
-    margin-top: 10px;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
+button {
+  flex: 1;
+  height: 42px;
+  border-radius: 20px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
 
+button:hover {
+  background: #4f46e5;
+}
+
+.btn-div a {
+  color: #cbd5f5;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* MESSAGE */
+#message {
+  margin-top: 12px;
+  font-size: 14px;
+}

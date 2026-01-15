@@ -1,108 +1,102 @@
-
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-/* body{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0A1C3B;
-} */
-.login-container{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-   overflow: hidden;
 
+body {
+  background: #0f172a;
+  height: 100vh;
 }
-.left{
-    flex: 2;
-    height: 100%;
-    padding: 50px;
-    color:white;
-    background: url(../assets/man-sits-dark-room-front-blank-laptop-screen.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 
+.login-container {
+  height: 100vh;
+  display: flex;
 }
-.right{
-     flex: 1.2;
-     height: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(216, 119, 216);
-    padding: 15px;
-    justify-content: center;
-    align-items: start;
-    background-color: white;
+
+.left {
+  flex: 2;
+  padding: 60px;
+  color: #e5e7eb;
+  background: linear-gradient(
+      rgba(2,6,23,0.65),
+      rgba(2,6,23,0.75)
+    ),
+    url(../assets/WhatsApp\ Image\ 2026-01-16\ at\ 1.26.29\ AM\ \(2\).jpeg)
+      center/cover;
+}
+
+.left h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.left p {
+  font-size: 15px;
+  max-width: 450px;
+  opacity: 0.9;
+}
+
+.right {
+  flex: 1.2;
+  background: #020617;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #heading {
-    align-self: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-.btn-div{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.login-btn{
-    margin-right: 10px;
-}
-
-.input-div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+input {
+  width: 100%;
+  height: 42px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  background: #0f172a;
+  color: white;
 }
 
-input{
-    margin: 5px 0px;
-    height: 35px;
-    padding: 7px;
-    border: 0.5px solid #0A1C3B;
-    width: 100%;
-    border-radius: 12px;
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.forgot-pass a {
+  font-size: 13px;
+  color: #cbd5f5;
+  text-decoration: none;
+}
+
+.btn-div {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  height: 42px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #6366f1;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4f46e5;
 }
 
 .linkButton {
-    color: white;
-    text-decoration: none;
-}
-
-button{
-    height: 35px;
-    margin: 5px 0px;
-    background-color:#0A1C3B;
-    border: none;
-    border-radius: 15px;
-    color: white;
-    width: 40%;
-}
-
-#heading{
-    margin-bottom: 15px;
-}
-.name{
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: flex-start;
-}
-p{
-    font-size: 15px;
-}
-.forgot-pass{
-    margin-bottom: 15px;
-    
+  color: white;
+  text-decoration: none;
 }
