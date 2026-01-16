@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Workora | Edit Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">Workora</div>
+
+    <nav>
+      <a href="index.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+      <a class="active"><i class="fas fa-user"></i> Edit Profile</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      © 2026 Workora
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div>
+        <h1>Edit Profile</h1>
+        <p>Update your personal information and skills</p>
+      </div>
+    </header>
+
+    <!-- FORM CARD -->
+    <section class="profile-card">
+
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" id="username" placeholder="Enter username">
+      </div>
+
+      <div class="form-group">
+        <label>Experience (years)</label>
+        <input type="number" id="experience" placeholder="e.g. 3">
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="section">
+        <p class="section-title">Qualification</p>
+        <div class="options">
+          <label><input type="radio" name="education" value="Matric"> Matric</label>
+          <label><input type="radio" name="education" value="Intermediate"> Intermediate</label>
+          <label><input type="radio" name="education" value="Bachelors"> Bachelors</label>
+          <label><input type="radio" name="education" value="Masters"> Masters</label>
+          <label><input type="radio" name="education" value="PHD"> PHD</label>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="section">
+        <p class="section-title">Skills</p>
+        <div class="skills">
+
+          <label><input type="checkbox"> HTML</label>
+          <label><input type="checkbox"> CSS</label>
+          <label><input type="checkbox"> JavaScript</label>
+          <label><input type="checkbox"> Bootstrap</label>
+          <label><input type="checkbox"> React</label>
+          <label><input type="checkbox"> Node.js</label>
+          <label><input type="checkbox"> PHP</label>
+          <label><input type="checkbox"> Python</label>
+          <label><input type="checkbox"> Java</label>
+          <label><input type="checkbox"> C</label>
+          <label><input type="checkbox"> C++</label>
+          <label><input type="checkbox"> SQL</label>
+          <label><input type="checkbox"> MySQL</label>
+          <label><input type="checkbox"> MongoDB</label>
+          <label><input type="checkbox"> Git</label>
+          <label><input type="checkbox"> Linux</label>
+          <label><input type="checkbox"> Networking</label>
+          <label><input type="checkbox"> Cyber Security</label>
+          <label><input type="checkbox"> Machine Learning</label>
+          <label><input type="checkbox"> Artificial Intelligence</label>
+          <label><input type="checkbox"> Data Analysis</label>
+          <label><input type="checkbox"> Excel</label>
+          <label><input type="checkbox"> AWS</label>
+          <label><input type="checkbox"> Docker</label>
+
+        </div>
+      </div>
+
+      <!-- ACTIONS -->
+      <div class="btn-group">
+        <button>Save Changes</button>
+        <a href="main.html">Cancel</a>
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
