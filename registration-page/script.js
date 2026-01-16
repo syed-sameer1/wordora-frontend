@@ -1,31 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
   const message = document.getElementById("message");
+  const registerBtn = document.getElementById("register");
 
-  document.getElementById("register").addEventListener("click", function () {
-    const username = Username.value.trim();
-    const emailVal = email.value.trim();
-    const passwordVal = password.value;
-    const confirmPasswordVal = confirmPassword.value;
-    const experience = Experience.value;
+  registerBtn.addEventListener("click", async function () {
 
-    const education = document.querySelector('input[name="education"]:checked');
+    // ----- GET VALUES -----
+    const name = document.getElementById("Username").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    const experience = Number(document.getElementById("Experience").value);
+
+    const educationEl = document.querySelector('input[name="education"]:checked');
     const skills = Array.from(
       document.querySelectorAll('input[name="skills[]"]:checked')
-    ).map(cb => cb.value);
+    ).map(skill => skill.value);
 
-    if (!username || !emailVal || !passwordVal || !confirmPasswordVal) {
+    // ----- VALIDATION -----
+    if (!name || !email || !password || !confirmPassword) {
       message.style.color = "red";
       message.innerText = "Please fill all required fields";
       return;
     }
 
-    if (passwordVal !== confirmPasswordVal) {
+    if (password !== confirmPassword) {
       message.style.color = "red";
       message.innerText = "Passwords do not match";
       return;
     }
 
-    if (!education) {
+    if (!educationEl) {
       message.style.color = "red";
       message.innerText = "Please select your qualification";
       return;
@@ -37,22 +41,49 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    const user = {
-      username,
-      email: emailVal,
-      password: passwordVal,
+    // ----- API BODY -----
+    const payload = {
+      name,
+      email,
+      password,
       experience,
-      education: education.value,
+      education: educationEl.value,
       skills
     };
 
-    localStorage.setItem("user", JSON.stringify(user));
+    // ----- API CALL -----
+    try {
+      registerBtn.disabled = true;
+      registerBtn.innerText = "Registering...";
 
-    message.style.color = "lightgreen";
-    message.innerText = "Registration successful! Redirecting...";
+      const response = await fetch("http://127.0.0.1:8000/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
 
-    setTimeout(() => {
-      window.location.href = "../dashboard/main.html";
-    }, 1000);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Registration failed");
+      }
+
+      // ----- SUCCESS -----
+      message.style.color = "lightgreen";
+      message.innerText = "Registration successful! Redirecting...";
+
+      setTimeout(() => {
+        window.location.href = "../login-page/index.html";
+      }, 1000);
+
+    } catch (error) {
+      message.style.color = "red";
+      message.innerText = error.message;
+    } finally {
+      registerBtn.disabled = false;
+      registerBtn.innerText = "Register";
+    }
   });
 });
