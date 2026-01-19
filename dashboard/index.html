@@ -41,12 +41,8 @@
     <!-- STATS -->
     <section class="stats">
       <div class="stat-card">
-        <h3>124</h3>
+        <h3 id="recommendedCount">124</h3>
         <p>Recommended Jobs</p>
-      </div>
-      <div class="stat-card">
-        <h3>18</h3>
-        <p>Saved Jobs</p>
       </div>
     </section>
 
@@ -56,9 +52,9 @@
       <div class="filters">
         <select id="salaryFilter">
           <option value="">Salary</option>
-          <option value="30000-50000">30k - 50k</option>
-          <option value="50000-100000">50k - 100k</option>
-          <option value="100000-999999">100k+</option>
+          <option>30k - 50k</option>
+          <option>50k - 100k</option>
+          <option>100k+</option>
         </select>
 
         <select>
@@ -68,12 +64,33 @@
           <option>3+ Years</option>
         </select>
 
-        <select>
-          <option>Skills</option>
-          <option>Frontend</option>
-          <option>Backend</option>
-          <option>Full Stack</option>
+        <select id="skillsFilter">
+          <option value="">Skills</option>
+          <option value="HTML">HTML</option>
+          <option value="Bootstrap">Bootstrap</option>
+          <option value="PHP">PHP</option>
+          <option value="C">C</option>
+          <option value="MySQL">MySQL</option>
+          <option value="Linux">Linux</option>
+          <option value="Machine Learning">Machine Learning</option>
+          <option value="Excel">Excel</option>
+          <option value="CSS">CSS</option>
+          <option value="React">React</option>
+          <option value="Python">Python</option>
+          <option value="C++">C++</option>
+          <option value="MongoDB">MongoDB</option>
+          <option value="Networking">Networking</option>
+          <option value="Artificial Intelligence">Artificial Intelligence</option>
+          <option value="AWS">AWS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Node.js">Node.js</option>
+          <option value="Java">Java</option>
+          <option value="Git">Git</option>
+          <option value="Cyber Security">Cyber Security</option>
+          <option value="Data Analysis">Data Analysis</option>
+          <option value="Docker">Docker</option>
         </select>
+
 
         <button>Search</button>
       </div>

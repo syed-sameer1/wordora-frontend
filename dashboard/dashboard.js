@@ -23,16 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
   loadJobs();
 });
 
-
 async function loadJobs() {
   const jobList = document.querySelector(".job-list");
   jobList.innerHTML = "<p>Loading jobs...</p>";
 
+  let query = [`page=${currentPage}`, `limit=${limit}`];
+
   const salary = document.querySelector(".filters select:nth-child(1)").value;
   const experience = document.querySelector(".filters select:nth-child(2)").value;
   const skills = document.querySelector(".filters select:nth-child(3)").value;
-
-  let query = [`page=${currentPage}`, `limit=${limit}`];
 
   if (salary === "30k - 50k") query.push("min_salary=30000&max_salary=50000");
   if (salary === "50k - 100k") query.push("min_salary=50000&max_salary=100000");
@@ -46,14 +45,19 @@ async function loadJobs() {
   const url = `http://127.0.0.1:8000/dashboard?${query.join("&")}`;
 
   const res = await fetch(url, {
-    headers: { Authorization: `Bearer ${localStorage.getItem("accessToken")}` }
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("accessToken")}`
+    }
   });
 
   const result = await res.json();
+
+  // 🔥 NEW: Update stats count
+  updateRecommendedCount(result.pagination.total);
+
   renderJobs(result.data);
   renderPagination(result.pagination);
 }
-
 
 function renderJobs(jobs) {
   const jobList = document.querySelector(".job-list");
@@ -119,3 +123,9 @@ function renderPagination(pagination) {
   }
 }
 
+function updateRecommendedCount(total) {
+  const countEl = document.getElementById("recommendedCount");
+  if (countEl) {
+    countEl.innerText = total;
+  }
+}
