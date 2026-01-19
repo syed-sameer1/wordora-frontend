@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="dashboard.js"></script>
 </head>
 <body>
 
@@ -53,11 +54,11 @@
     <section class="filter-box">
       <h2>Filter Jobs</h2>
       <div class="filters">
-        <select>
-          <option>Salary</option>
-          <option>30k - 50k</option>
-          <option>50k - 100k</option>
-          <option>100k+</option>
+        <select id="salaryFilter">
+          <option value="">Salary</option>
+          <option value="30000-50000">30k - 50k</option>
+          <option value="50000-100000">50k - 100k</option>
+          <option value="100000-999999">100k+</option>
         </select>
 
         <select>
@@ -90,7 +91,7 @@
         <p class="job-company">TechSoft Solutions</p>
         <p class="job-location">Karachi, Pakistan</p>
 
-        <div class="job-tags">
+        <div class="job-tags scrollable">
           <span>React</span>
           <span>UI/UX</span>
           <span>Tailwind</span>
@@ -103,7 +104,6 @@
           and responsive design skills.
         </p>
 
-        <button class="apply-btn">Apply</button>
       </div>
 
       <div class="job">
@@ -133,6 +133,8 @@
 
     </section>
 
+    <div class="pagination"></div>
+    
   </main>
 </div>
 
